@@ -1,0 +1,27 @@
+.snack {}
+
+.snack__container {
+    text-transform: uppercase;
+    margin: 2.5vw 0;
+}
+
+.snack__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.snack__name {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-weight: 400;
+    max-width: 75%;
+}
+
+.snack__price {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-weight: 400;
+}

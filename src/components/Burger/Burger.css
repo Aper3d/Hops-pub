@@ -1,0 +1,42 @@
+.burger {}
+
+.burger__list {}
+
+.burger__container {
+    max-width: 75%;
+}
+
+.burger__item {
+    display: flex;
+}
+
+.burger__name {
+    margin: 0;
+    padding: 0;
+}
+
+.burger__info {
+    margin: 8px 0;
+    padding: 0;
+    font-size: .9em;
+    text-align: justify;
+}
+
+.burger__price {
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    font-weight: 600;
+}
+
+@media (prefers-color-scheme: light) {
+    .burger__info {
+        color: #E85A4F;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    /* .burger__info {
+        color: #464866;
+    } */
+}

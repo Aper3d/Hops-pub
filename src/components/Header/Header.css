@@ -1,0 +1,124 @@
+.header {
+    width: 100vw;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.header__title {
+    padding: 0;
+    margin: 0;
+    line-height: 2.5;
+    font-size: 2rem;
+}
+
+.header__button {
+    background-color: transparent;
+    border: none;
+    font-size: 4rem;
+    padding: 0;
+    margin: 0;
+    transition: all 130ms ease-in;
+}
+
+.header__button_open {
+    transform: rotate(45deg);
+}
+
+.header__container {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    width: 90vw;
+    padding: 0;
+    margin: 0 5vw;
+    position: relative;
+    left: 0;
+    transition: all 130ms ease-in;
+}
+
+.header__container_hidden {
+    left: -80vw;
+    z-index: 1;
+}
+
+.nav {
+    padding: 0;
+    margin: 0;
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -85vw;
+    transition: all 130ms ease-in;
+}
+
+.nav_visible {
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.nav__link {
+    padding: 0;
+    margin: 0 10vw;
+    line-height: 2.5;
+    font-size: 2rem;
+}
+
+@media (prefers-color-scheme: light) {
+    .header {
+        background-color: #FCFCFC;
+    }
+
+    .header__title {
+        color: #8E8D8A;
+    }
+
+    .header__button {
+        color: #8E8D8A;
+    }
+
+    .nav {
+        background-color: #8E8D8A;
+    }
+
+    .nav__link {
+        color: #EAE7DC;
+    }
+
+    .nav__link:hover {
+        color: #EAE7DC;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .header {
+        background-color: #464866;
+    }
+
+    .header__title {
+        color: #AAABB8;
+    }
+
+    .header__button {
+        color: #AAABB8;
+    }
+
+    .nav {
+        background-color: #AAABB8;
+    }
+
+    .nav__link {
+        color: #29648A;
+    }
+
+    .nav__link:hover {
+        color: #29648A;
+    }
+}

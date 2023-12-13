@@ -1,0 +1,91 @@
+@import url('./vendor/fonts/inter/inter.css');
+@import url('./vendor/normalize.css');
+
+:root {
+  font-family: Inter, system-ui, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+}
+
+section {
+  width: 90%;
+  margin: 0 auto;
+  padding: 5vw;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #8E8D8A;
+    background-color: #FCFCFC;
+  }
+
+  h3 {
+    color: #ca493a;
+  }
+
+  a {
+    color: #ca493a;
+  }
+
+  a:hover {
+    color: #8E8D8A;
+  }
+
+  section {
+    background-color: #EAE7DC;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #AAABB8;
+    background-color: #464866;
+  }
+
+  h3 {
+    color: #2E9CCA;
+  }
+
+  a {
+    color: #2E9CCA;
+  }
+
+  a:hover {
+    color: #AAABB8;
+  }
+
+  section {
+    background-color: #25274D;
+  }
+
+}
